@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tutorial 4</title>
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+    <style>
+        .s {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">Logo2</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Page1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorial2.html">Page2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorial3.html">Page3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorial4.html">Page4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="forms.html">Forms</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-2">
+        <h1>Bootstrap Utilities</h1>
+        <h3>Borders</h3>
+        <span class="border s"></span>
+        <span class="border border-0 s"></span>
+        <span class="border border-top-0 s"></span>
+        <span class="border border-end-0 s"></span>
+        <span class="border border-bottom-0 s"></span>
+        <span class="border border-start-0 s"></span>
+        <br>
+
+        <span class="border-top s"></span>
+        <span class="border-end s"></span>
+        <span class="border-bottom s"></span>
+        <span class="border-start s"></span>
+
+        <hr>
+
+        <h3>Border Width</h3>
+        <span class="border border-1 s"></span>
+        <span class="border border-2 s"></span>
+        <span class="border border-3 s"></span>
+        <span class="border border-4 s"></span>
+        <span class="border border-5 s"></span>
+        <hr>
+
+        <h3>Border Color</h3>
+        <span class="border border-primary s"></span>
+        <span class="border border-secondary s"></span>
+        <span class="border border-success s"></span>
+        <span class="border border-danger s"></span>
+        <span class="border border-info s"></span>
+        <span class="border border-warning s"></span>
+        <span class="border border-dark s"></span>
+        <span class="border border-light s"></span>
+        <span class="border border-white s"></span>
+        <hr>
+
+        <h3>Border Radius</h3>
+        <span class="rounded border-dark border s"></span>
+        <span class="rounded-top border-dark border  s"></span>
+        <span class="rounded-end border-dark border  s"></span>
+        <span class="rounded-bottom border-dark border  s"></span>
+        <span class="rounded-start border-dark border s"></span>
+        <span class="rounded-circle border-dark border  s"></span>
+        <span class="rounded-pill border-dark border s" style="width: 130px;"></span>
+        <span class="rounded-0 border-dark border s"></span>
+        <span class="rounded-1 border-dark border s"></span>
+        <span class="rounded-2 border-dark border s"></span>
+        <span class="rounded-3 border-dark border s"></span>
+        <span class="rounded-4 border-dark border s"></span>
+        <span class="rounded-5 border-dark border s"></span>
+        <hr>
+
+        <h3>Float and Clearfix</h3>
+        <div class="clearfix">
+            <span class="float-start border border-dark s">Float left</span>
+            <span class="float-end border border-dark s">Float right</span>
+        </div>
+        <hr>
+        <h3>Responsive Floats</h3>
+        <div class="float-sm-end">Float right on small screens or wider</div><br>
+        <div class="float-md-end">Float right on medium screens or wider</div><br>
+        <div class="float-lg-end">Float right on large screens or wider</div><br>
+        <div class="float-xl-end">Float right on extra large screens or wider</div><br>
+        <div class="float-xxl-end">Float right on XXL screens or wider</div><br>
+        <div class="float-none">Float none</div>
+        <hr>
+        <h3>Center Align</h3>
+        <div class="mx-auto bg-warning" style="width: 150px;">Centered</div>
+        <hr>
+        <h3>Width</h3>
+        <div class="w-25 bg-warning">Width 25%</div>
+        <div class="w-50 bg-warning">Width 50%</div>
+        <div class="w-75 bg-warning">Width 75%</div>
+        <div class="w-100 bg-warning">Width 100%</div>
+        <div class="w-auto bg-warning">Auto Width</div>
+        <div class="mw-100 bg-warning">Max Width 100%</div>
+        <hr>
+        <!-- <h3>Height</h3>
+        <div style="height:200px;background-color:#ddd">
+            <div class="h-25 bg-warning border">Height 25%</div>
+            <div class="h-50 bg-warning border">Height 50%</div>
+            <div class="h-75 bg-warning border">Height 75%</div>
+            <div class="h-100 bg-warning border">Height 100%</div>
+            <div class="h-auto bg-warning border">Auto Height</div>
+            <div class="mh-100 bg-warning border" style="height:500px">Max Height 100%</div>
+        </div><br> -->
+        <h3>Spacing</h3>
+        <div class="pt-4 bg-warning">I only have a top padding (1.5rem)</div>
+        <div class="p-5 bg-success">I have a padding on all sides (3rem)</div>
+        <div class="m-5 pb-5 bg-info">I have a margin on all sides (3rem) and a bottom padding (3rem)</div>
+        <hr>
+        <h3>Shadows</h3>
+        <div class="shadow-none p-4 mb-4 bg-light">No shadow</div>
+        <div class="shadow-sm p-4 mb-4 bg-white">Small shadow</div>
+        <div class="shadow p-4 mb-4 bg-white">Default shadow</div>
+        <div class="shadow-lg p-4 mb-4 bg-white">Large shadow</div>
+        <hr>
+        <h3>Vertical Align</h3>
+        <span class="align-baseline">baseline</span>
+        <span class="align-top">top</span>
+        <span class="align-middle">middle</span>
+        <span class="align-bottom">bottom</span>
+        <span class="align-text-top">text-top</span>
+        <span class="align-text-bottom">text-bottom</span>
+        <hr>
+        <h3>Aspect Ratio</h3>
+        <!-- Aspect ratio 1:1 -->
+        <div class="ratio ratio-1x1">
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+
+        <!-- Aspect ratio 4:3 -->
+        <div class="ratio ratio-4x3">
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+
+        <!-- Aspect ratio 16:9 -->
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+
+        <!-- Aspect ratio 21:9 -->
+        <div class="ratio ratio-21x9">
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div><br>
+        <h3>Visibility</h3>
+        <div class="visible">I am visible</div>
+        <div class="invisible">I am invisible</div>
+        <h3>Close icon</h3>
+        <button type="button" class="btn-close"></button>
+        <hr>
+        <h3>Screenreaders</h3>
+        <span class="visually-hidden">I will be hidden on all screens except for screen readers.</span>
+        <hr>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h1>Flex</h1>
+        <div class="d-flex p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-inline-flex p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <h3>Horizontal Direction</h3>
+        <div class="d-flex flex-row bg-secondary">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+
+        <div class="d-flex flex-row-reverse bg-secondary">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <h3>Vertical Direction</h3>
+        <div class="d-flex flex-column">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+
+        <div class="d-flex flex-column-reverse">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <h3>Justify Content</h3>
+        <div class="d-flex justify-content-start bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-end bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-center bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-between bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-around bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <h3>Fill/Equal Widths</h3>
+        <div class="d-flex">
+            <div class="p-2 bg-info flex-fill">Flex item 1</div>
+            <div class="p-2 bg-warning flex-fill">Flex item 2</div>
+            <div class="p-2 bg-primary flex-fill">Flex item 3</div>
+        </div>
+        <h3>Grow</h3>
+        <div class="d-flex">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary flex-grow-1">Flex item 3</div>
+        </div>
+        <h3>Order</h3>
+        <div class="d-flex bg-secondary">
+            <div class="p-2 bg-info order-3">Flex item 1</div>
+            <div class="p-2 bg-warning order-2">Flex item 2</div>
+            <div class="p-2 bg-primary order-1">Flex item 3</div>
+        </div>
+        <h3>Auto Margins</h3>
+        <div class="d-flex bg-secondary">
+            <div class="p-2 ms-auto bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+
+        <div class="d-flex bg-secondary">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 me-auto bg-primary">Flex item 3</div>
+        </div>
+        <h3>Wrap</h3>
+        <div class="d-flex flex-wrap bg-light">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+        <p><code>.flex-wrap-reverse:</code></p>
+        <div class="d-flex flex-wrap-reverse bg-light">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+        <p><code>.flex-nowrap:</code></p>
+        <div class="d-flex flex-nowrap bg-light">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+            <div class="p-2 border">Flex item 26</div>
+            <div class="p-2 border">Flex item 27</div>
+            <div class="p-2 border">Flex item 28</div>
+            <div class="p-2 border">Flex item 29</div>
+            <div class="p-2 border">Flex item 30</div>
+            <div class="p-2 border">Flex item 31</div>
+            <div class="p-2 border">Flex item 32</div>
+            <div class="p-2 border">Flex item 33</div>
+            <div class="p-2 border">Flex item 34</div>
+            <div class="p-2 border">Flex item 35</div>
+        </div>
+        <h3>Align Content</h3>
+        <p>.align-content-start (default):</p>
+        <div class="d-flex flex-wrap align-content-start bg-light" style="height:300px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+        <p>.align-content-end:</p>
+        <div class="d-flex flex-wrap align-content-end bg-light" style="height:300px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+        <p>.align-content-center:</p>
+        <div class="d-flex flex-wrap align-content-center bg-light" style="height:300px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+        <p>.align-content-around:</p>
+        <div class="d-flex flex-wrap align-content-around bg-light" style="height:300px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+        <p>.align-content-stretch:</p>
+        <div class="d-flex flex-wrap align-content-stretch bg-light" style="height:300px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <h3>Align Items</h3>
+        <p>.align-items-start:</p>
+        <div class="d-flex align-items-start bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <p>.align-items-end:</p>
+        <div class="d-flex align-items-end bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <p>.align-items-center:</p>
+        <div class="d-flex align-items-center bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <p>.align-items-baseline:</p>
+        <div class="d-flex align-items-baseline bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <p>.align-items-stretch (default):</p>
+        <div class="d-flex align-items-stretch bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+    
+    <h3>Align Self</h3>
+    <p>.align-self-start:</p>
+    <div class="d-flex bg-light" style="height:150px">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border align-self-start">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+    </div>
+    <br>
+    <p>.align-self-end:</p>
+    <div class="d-flex bg-light" style="height:150px">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border align-self-end">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+    </div>
+    <br>
+    <p>.align-self-center:</p>
+    <div class="d-flex bg-light" style="height:150px">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border align-self-center">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+    </div>
+    <br>
+    <p>.align-self-baseline:</p>
+    <div class="d-flex bg-light" style="height:150px">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border align-self-baseline">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+    </div>
+    <br>
+    <p>.align-self-stretch (default):</p>
+    <div class="d-flex bg-light" style="height:150px">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border align-self-stretch">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+    </div>
+    </div>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

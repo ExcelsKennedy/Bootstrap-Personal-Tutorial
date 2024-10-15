@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Tutorial 2</title>
+  <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <h1 style="margin-top: 80px;">Bootstrap Buttons</h1>
+  <button type="button" class="btn">Click Me</button>
+  <button class="btn btn-primary">Click me</button>
+  <button class="btn btn-info">Click me</button>
+  <button class="btn btn-secondary">Click me</button>
+  <button class="btn btn-danger">Click me</button>
+  <button class="btn btn-success">Click me</button>
+  <button class="btn btn-warning">Click me</button>
+  <button class="btn btn-dark">Click me</button>
+  <button class="btn btn-light">Click me</button>
+  <button class="btn btn-link">Click me</button>
+  <br>
+  <hr>
+  <a href="#" class="btn btn-success">Link Button</a>
+  <button type="button" class="btn btn-success">Button</button>
+  <input type="button" class="btn btn-success" value="Input Button">
+  <input type="submit" class="btn btn-success" value="Submit Button">
+  <input type="reset" class="btn btn-success" value="Reset Button">
+  <br>
+  <hr>
+  <button type="button" class="btn btn-outline-primary">Click Me</button>
+  <button type="button" class="btn btn-outline-info">Click Me</button>
+  <button type="button" class="btn btn-outline-dark">Click Me</button>
+  <button type="button" class="btn btn-outline-light">Click Me</button>
+  <button type="button" class="btn btn-outline-warning">Click Me</button>
+  <button type="button" class="btn btn-outline-danger">Click Me</button>
+  <button type="button" class="btn btn-outline-success">Click Me</button>
+  <button type="button" class="btn btn-outline-secondary">Click Me</button>
+  <br>
+  <hr>
+  <button type="button" class="btn btn-primary btn-lg">Large</button>
+  <button type="button" class="btn btn-primary">Default</button>
+  <button type="button" class="btn btn-primary btn-sm">Small</button>
+  <br>
+  <hr>
+  <div class="d-grid">
+    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+  </div><br>
+  <hr>
+  <div class="d-grid gap-3">
+    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+  </div><br>
+  <hr>
+  <button type="button" class="btn btn-primary active">Active Primary</button>
+  <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+  <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+  <br>
+  <hr>
+  <button class="btn btn-primary">
+    <span class="spinner-border spinner-border-sm"></span>
+  </button>
+  <button class="btn btn-primary">
+    <span class="spinner-border spinner-border-sm"></span> Loading
+  </button>
+  <button class="btn btn-primary" disabled>
+    <span class="spinner-border spinner-border-sm"></span> Loading
+  </button>
+  <button class="btn btn-primary" disabled>
+    <span class="spinner-grow spinner-grow-sm"></span> Loading
+  </button>
+  <br>
+  <hr>
+  <h1>Button Groups</h1>
+  <div class="btn-group">
+    <button class="btn btn-primary">Apple</button>
+    <button class="btn btn-primary">Samsung</button>
+    <button class="btn btn-primary">Sony</button>
+  </div>
+  <div class="container mt-3">
+    <h2>Button Groups Sizes</h2>
+    <p>Add class .btn-group-* to size all buttons in a button group.</p>
+    <h3>Large Buttons:</h3>
+    <div class="btn-group btn-group-lg">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+    <hr>
+    <h3>Default Buttons:</h3>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+    <hr>
+    <h3>Small Buttons:</h3>
+    <div class="btn-group btn-group-sm">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <h2>Vertical Button Group</h2>
+    <p>Use the .btn-group-vertical class to create a vertical button group:</p>
+    <div class="btn-group-vertical">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <button type="button" class="btn btn-primary">Sony</button>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">BMW</button>
+    <button type="button" class="btn btn-primary">Mercedes</button>
+    <button type="button" class="btn btn-primary">Volvo</button>
+  </div>
+  <br>
+  <hr>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Tablet</a>
+        <a class="dropdown-item" href="#">Smartphone</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <h1>Badges</h1>
+  <p>This is an <span class="badge bg-primary">Example</span></p>
+  <p>This is an <span class="badge bg-secondary">Example</span></p>
+  <p>This is an <span class="badge bg-warning">Example</span></p>
+  <p>This is an <span class="badge bg-info">Example</span></p>
+  <p>This is an <span class="badge bg-danger">Example</span></p>
+  <p>This is an <span class="badge bg-success">Example</span></p>
+  <p>This is an <span class="badge bg-light">Example</span></p>
+  <p>This is an <span class="badge bg-dark">Example</span></p>
+  <hr>
+  <span class="badge bg-primary">Primary</span>
+  <span class="badge bg-secondary">Secondary</span>
+  <span class="badge bg-success">Success</span>
+  <span class="badge bg-danger">Danger</span>
+  <span class="badge bg-warning">Warning</span>
+  <span class="badge bg-info">Info</span>
+  <span class="badge bg-light">Light</span>
+  <span class="badge bg-dark">Dark</span>
+  <hr>
+  <span class="badge rounded-pill bg-primary">Primary</span>
+  <span class="badge rounded-pill bg-secondary">Secondary</span>
+  <span class="badge rounded-pill bg-success">Success</span>
+  <span class="badge rounded-pill bg-danger">Danger</span>
+  <span class="badge rounded-pill bg-warning">Warning</span>
+  <span class="badge rounded-pill bg-info">Info</span>
+  <span class="badge rounded-pill bg-light">Light</span>
+  <span class="badge rounded-pill bg-dark">Dark</span>
+  <hr>
+  <button type="button" class="btn btn-primary">
+    Messages <span class="badge bg-danger">4</span>
+  </button>
+  <hr>
+  <div class="container">
+    <h1>Progress Bar</h1>
+    <div class="progress">
+      <div class="progress-bar" style="width: 70%;"></div>
+    </div>
+    <div class="progress mt-2" style="height: 20px;">
+      <div class="progress-bar" style="height: 20px; width: 30%;"></div>
+    </div>
+    <div class="progress mt-2" style="height: 40px;">
+      <div class="progress-bar" style="height: 40px; width: 60%;"></div>
+    </div>
+    <div class="progress mt-2" style="height: 50px;">
+      <div class="progress-bar" style="height: 50px; width: 20%;"></div>
+    </div>
+    <div class="progress mt-2">
+      <div class="progress-bar" style="width: 80%;">80%</div>
+    </div>
+  </div>
+  <hr>
+  <div class="container mt-3">
+    <h2>Colored Progress Bars</h2>
+    <p>Use any of the contextual color classes to change the color of the progress bar:</p>
+    <!-- Blue -->
+    <div class="progress">
+      <div class="progress-bar" style="width:10%"></div>
+    </div><br>
+
+    <!-- Green -->
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width:20%"></div>
+    </div><br>
+
+    <!-- Turquoise -->
+    <div class="progress">
+      <div class="progress-bar bg-info" style="width:30%"></div>
+    </div><br>
+
+    <!-- Orange -->
+    <div class="progress">
+      <div class="progress-bar bg-warning" style="width:40%"></div>
+    </div><br>
+
+    <!-- Red -->
+    <div class="progress">
+      <div class="progress-bar bg-danger" style="width:50%"></div>
+    </div><br>
+
+    <!-- White -->
+    <div class="progress border">
+      <div class="progress-bar bg-white" style="width:60%"></div>
+    </div><br>
+
+    <!-- Grey -->
+    <div class="progress">
+      <div class="progress-bar bg-secondary" style="width:70%"></div>
+    </div><br>
+
+    <!-- Light Grey -->
+    <div class="progress border">
+      <div class="progress-bar bg-light" style="width:80%"></div>
+    </div><br>
+
+    <!-- Dark Grey -->
+    <div class="progress">
+      <div class="progress-bar bg-dark" style="width:90%"></div>
+    </div>
+  </div>
+  <hr>
+  <div class="container mt-3">
+    <h2>Striped Progress Bars</h2>
+    <p>The .progress-bar-striped class adds stripes to the progress bars:</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped" style="width:30%"></div>
+    </div>
+    <br>
+    <div class="progress">
+      <div class="progress-bar bg-success progress-bar-striped" style="width:40%"></div>
+    </div>
+    <br>
+    <div class="progress">
+      <div class="progress-bar bg-info progress-bar-striped" style="width:50%"></div>
+    </div>
+    <br>
+    <div class="progress">
+      <div class="progress-bar bg-warning progress-bar-striped" style="width:60%"></div>
+    </div>
+    <br>
+    <div class="progress">
+      <div class="progress-bar bg-danger progress-bar-striped" style="width:70%"></div>
+    </div>
+  </div>
+  <hr>
+  <div class="container mt-3">
+    <h2>Animated Progress Bar</h2>
+    <p>Add the .progress-bar-animated class to animate the progress bar:</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+    </div>
+    <div class="progress mt-2">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:60%"></div>
+    </div>
+    <div class="progress mt-2">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:80%"></div>
+    </div>
+  </div>
+  <hr>
+  <div class="container mt-3">
+    <h2>Multiple Progress Bars</h2>
+    <p>Create a stacked progress bar by placing multiple bars into the same div with class="progress":</p>
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width:40%">
+        Free Space
+      </div>
+      <div class="progress-bar bg-warning" style="width:10%">
+        Warning
+      </div>
+      <div class="progress-bar bg-danger" style="width:20%">
+        Danger
+      </div>
+      <div class="progress-bar bg-info" style="width:30%">
+        Danger
+      </div>
+    </div>
+  </div>
+  <hr>
+  <h1>Spinners</h1>
+  <div class="spinner-border"></div>
+  <div class="spinner-border text-danger"></div>
+  <div class="spinner-border text-info"></div>
+  <div class="spinner-border text-dark"></div>
+  <div class="spinner-border text-secondary"></div>
+  <div class="spinner-border text-primary"></div>
+  <div class="spinner-border text-success"></div>
+  <div class="spinner-border text-warning"></div>
+  <hr>
+  <div class="spinner-grow"></div>
+  <div class="spinner-grow text-danger"></div>
+  <div class="spinner-grow text-info"></div>
+  <div class="spinner-grow text-secondary"></div>
+  <div class="spinner-grow text-warning"></div>
+  <div class="spinner-grow text-success"></div>
+  <div class="spinner-grow text-dark"></div>
+  <div class="spinner-grow text-primary"></div>
+  <hr>
+  <button class="btn btn-danger">
+    <span class="spinner-border spinner-border-sm"></span>
+    Spinner Button
+  </button>
+  <button class="btn btn-danger">
+    <span class="spinner-grow spinner-grow-sm"></span>
+    Spinner Button
+  </button>
+  <hr>
+  <div class="container">
+    <h1>Pagination</h1>
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="">1</a></li>
+      <li class="page-item"><a class="page-link" href="">2</a></li>
+      <li class="page-item"><a class="page-link" href="">3</a></li>
+      <li class="page-item"><a class="page-link" href="">Next</a></li>
+    </ul>
+    <hr>
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="">1</a></li>
+      <li class="page-item active"><a class="page-link" href="">2</a></li>
+      <li class="page-item"><a class="page-link" href="">3</a></li>
+      <li class="page-item"><a class="page-link" href="">Next</a></li>
+    </ul>
+    <hr>
+    <ul class="pagination">
+      <li class="page-item disabled"><a class="page-link" href="">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="">1</a></li>
+      <li class="page-item active"><a class="page-link" href="">2</a></li>
+      <li class="page-item"><a class="page-link" href="">3</a></li>
+      <li class="page-item"><a class="page-link" href="">Next</a></li>
+    </ul>
+    <hr>
+    <ul class="pagination pagination-sm">
+      <li class="page-item disabled"><a class="page-link" href="">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="">1</a></li>
+      <li class="page-item active"><a class="page-link" href="">2</a></li>
+      <li class="page-item"><a class="page-link" href="">3</a></li>
+      <li class="page-item"><a class="page-link" href="">Next</a></li>
+    </ul>
+    <hr>
+    <ul class="pagination pagination-lg">
+      <li class="page-item disabled"><a class="page-link" href="">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="">1</a></li>
+      <li class="page-item active"><a class="page-link" href="">2</a></li>
+      <li class="page-item"><a class="page-link" href="">3</a></li>
+      <li class="page-item"><a class="page-link" href="">Next</a></li>
+    </ul>
+    <hr>
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled"><a class="page-link" href="">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="">1</a></li>
+      <li class="page-item active"><a class="page-link" href="">2</a></li>
+      <li class="page-item"><a class="page-link" href="">3</a></li>
+      <li class="page-item"><a class="page-link" href="">Next</a></li>
+    </ul>
+    <hr>
+    <ul class="pagination justify-content-end">
+      <li class="page-item disabled"><a class="page-link" href="">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="">1</a></li>
+      <li class="page-item active"><a class="page-link" href="">2</a></li>
+      <li class="page-item"><a class="page-link" href="">3</a></li>
+      <li class="page-item"><a class="page-link" href="">Next</a></li>
+    </ul>
+    <hr>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="">Photos</a></li>
+      <li class="breadcrumb-item"><a href="">Summer 2024</a></li>
+      <li class="breadcrumb-item"><a href="">Italy</a></li>
+      <li class="breadcrumb-item"><a href="">Rome</a></li>
+    </ul>
+  </div>
+  <hr>
+  <div class="container">
+    <h1>List Groups</h1>
+    <ul class="list-group">
+      <li class="list-group-item">First item</li>
+      <li class="list-group-item">Second item</li>
+      <li class="list-group-item">Third item</li>
+    </ul>
+    <hr>
+    <ul class="list-group">
+      <li class="list-group-item active">First item</li>
+      <li class="list-group-item">Second item</li>
+      <li class="list-group-item">Third item</li>
+    </ul>
+    <hr>
+    <div class="list-group">
+      <a class="list-group-item list-group-item-action" href="">First item</a>
+      <a class="list-group-item list-group-item-action" href="">Second item</a>
+      <a class="list-group-item list-group-item-action" href="">Third item</a>
+    </div>
+    <hr>
+    <div class="list-group">
+      <a class="list-group-item disabled" href="">First item</a>
+      <a class="list-group-item disabled" href="">Second item</a>
+      <a class="list-group-item list-group-item-action" href="">Third item</a>
+    </div>
+    <hr>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">First item</li>
+      <li class="list-group-item">Second item</li>
+      <li class="list-group-item">Third item</li>
+    </ul>
+    <hr>
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item">First item</li>
+      <li class="list-group-item">Second item</li>
+      <li class="list-group-item">Third item</li>
+    </ol>
+    <hr>
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item">First item</li>
+      <li class="list-group-item">Second item</li>
+      <li class="list-group-item">Third item</li>
+      <li class="list-group-item">Fourth item</li>
+    </ul>
+    <hr>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-success">Success item</li>
+      <li class="list-group-item list-group-item-secondary">Secondary item</li>
+      <li class="list-group-item list-group-item-info">Info item</li>
+      <li class="list-group-item list-group-item-warning">Warning item</li>
+      <li class="list-group-item list-group-item-danger">Danger item</li>
+      <li class="list-group-item list-group-item-primary">Primary item</li>
+      <li class="list-group-item list-group-item-dark">Dark item</li>
+      <li class="list-group-item list-group-item-light">Light item</li>
+    </ul>
+    <hr>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">Action item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-success">Success item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Secondary item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Warning item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Danger item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dark item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-light">Light item</a>
+    </div>
+    <hr>
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Inbox
+        <span class="badge bg-primary rounded-pill">12</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Ads
+        <span class="badge bg-primary rounded-pill">50</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Junk
+        <span class="badge bg-primary rounded-pill">99</span>
+      </li>
+    </ul>
+  </div>
+  <hr>
+  <div class="container">
+    <h1>Cards</h1>
+    <div class="card">
+      <div class="card-body">Basic card</div>
+    </div>
+    <hr>
+    <div class="card">
+      <div class="card-header">Header</div>
+      <div class="card-body">Content</div>
+      <div class="card-footer">Footer</div>
+    </div>
+    <hr>
+    <h2>Cards with Contextual Classes</h2>
+    <div class="card">
+      <div class="card-body">Basic card</div>
+    </div>
+    <br>
+    <div class="card bg-primary text-white">
+      <div class="card-body">Primary card</div>
+    </div>
+    <br>
+    <div class="card bg-success text-white">
+      <div class="card-body">Success card</div>
+    </div>
+    <br>
+    <div class="card bg-info text-white">
+      <div class="card-body">Info card</div>
+    </div>
+    <br>
+    <div class="card bg-warning text-white">
+      <div class="card-body">Warning card</div>
+    </div>
+    <br>
+    <div class="card bg-danger text-white">
+      <div class="card-body">Danger card</div>
+    </div>
+    <br>
+    <div class="card bg-secondary text-white">
+      <div class="card-body">Secondary card</div>
+    </div>
+    <br>
+    <div class="card bg-dark text-white">
+      <div class="card-body">Dark card</div>
+    </div>
+    <br>
+    <div class="card bg-light text-dark">
+      <div class="card-body">Light card</div>
+    </div>
+    <hr>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Some example text. Some example text.</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+    <hr>
+    <div class="card" style="width:400px">
+      <img class="card-img-top" src="images/img_avatar1.png" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some example text.</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
+    <hr>
+    <p>Image at the bottom (card-img-bottom):</p>
+    <div class="card" style="width:400px">
+      <div class="card-body">
+        <h4 class="card-title">Jane Doe</h4>
+        <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+      <img class="card-img-bottom" src="images/img_avatar6.png" alt="Card image" style="width:100%">
+    </div>
+    <hr>
+    <div class="card" style="width:500px">
+      <img class="card-img-top" src="images/img_avatar1.png" alt="Card image">
+      <div class="card-img-overlay">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some example text.</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
+    <hr>
+    <div class="card img-fluid" style="width:500px">
+      <img class="card-img-top" src="images/img_avatar6.png" alt="Card image" style="width:100%">
+      <div class="card-img-overlay">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some example text some example text. Some example text some example text. Some example text
+          some example text. Some example text some example text.</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <h1>Dropdowns</h1>
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown Button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#" class="dropdown-item">Link 1</a></li>
+        <li><a href="#" class="dropdown-item">Link 2</a></li>
+        <li><a href="#" class="dropdown-item">Link 3</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Another link</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <h5 class="dropdown-header">Dropdown header 1</h5>
+        </li>
+        <li><a class="dropdown-item" href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+        <li>
+          <h5 class="dropdown-header">Dropdown header 2</h5>
+        </li>
+        <li><a class="dropdown-item" href="#">Another link</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Normal</a></li>
+        <li><a class="dropdown-item active" href="#">Active</a></li>
+        <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="dropdown dropend">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropend
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Normal</a></li>
+        <li><a class="dropdown-item active" href="#">Active</a></li>
+        <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="dropdown dropstart">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropstart
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Normal</a></li>
+        <li><a class="dropdown-item active" href="#">Active</a></li>
+        <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="dropdown dropdown-menu-end">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Wide dropdown button to demonstrate this example
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="dropup">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropup button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+        <li><a class="dropdown-item-text" href="#">Text Link</a></li>
+        <li><span class="dropdown-item-text">Just Text</span></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Tablet</a></li>
+          <li><a class="dropdown-item" href="#">Smartphone</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="btn-group-vertical">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Tablet</a></li>
+          <li><a class="dropdown-item" href="#">Smartphone</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <hr>
+
+  <div class="container">
+    <h1>Collapse</h1>
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">
+      Simple Collapsible
+    </button>
+    <div id="demo" class="collapse">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam consectetur quam
+      consequuntur numquam, libero vitae vero qui commodi sapiente corporis
+      voluptatibus, ex tenetur quaerat voluptates repellendus ad magnam architecto animi.
+    </div>
+    <hr>
+    <a href="#link" data-bs-toggle="collapse">Collapsible</a>
+
+    <div id="link" class="collapse">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam consectetur quam
+      consequuntur numquam, libero vitae vero qui commodi sapiente corporis
+      voluptatibus, ex tenetur quaerat voluptates repellendus ad magnam architecto animi.
+    </div>
+    <hr>
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">
+      Simple Collapsible
+    </button>
+    <div id="demo" class="collapse show">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam consectetur quam
+      consequuntur numquam, libero vitae vero qui commodi sapiente corporis
+      voluptatibus, ex tenetur quaerat voluptates repellendus ad magnam architecto animi.
+    </div>
+    <hr>
+    <h1>Accordion</h1>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" href="#collapseOne" data-bs-toggle="collapse">
+            Collapsible Group Item #1
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam consectetur quam
+            consequuntur numquam, libero vitae vero qui commodi sapiente corporis
+            voluptatibus, ex tenetur quaerat voluptates repellendus ad magnam architecto animi.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" href="#collapseTwo" data-bs-toggle="collapse">
+            Collapsible Group Item #2
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam consectetur quam
+            consequuntur numquam, libero vitae vero qui commodi sapiente corporis
+            voluptatibus, ex tenetur quaerat voluptates repellendus ad magnam architecto animi.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" href="#collapseThree" data-bs-toggle="collapse">
+            Collapsible Group Item #3
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam consectetur quam
+            consequuntur numquam, libero vitae vero qui commodi sapiente corporis
+            voluptatibus, ex tenetur quaerat voluptates repellendus ad magnam architecto animi.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="container">
+    <h1>Navs</h1>
+    <ul class="nav">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <hr>
+
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <hr>
+
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <hr>
+
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <hr>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a href="#" class="nav-link active">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <hr>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a href="#" class="nav-link active">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <hr>
+
+    <ul class="nav nav-tabs nav-justified">
+      <li class="nav-item">
+        <a href="#" class="nav-link active">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <hr>
+
+    <ul class="nav nav-pills nav-justified">
+      <li class="nav-item">
+        <a href="#" class="nav-link active">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <hr>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Link 1</a></li>
+          <li><a class="dropdown-item" href="#">Link 2</a></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <hr>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Link 1</a></li>
+          <li><a class="dropdown-item" href="#">Link 2</a></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <hr>
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="home" class="container tab-pane active"><br>
+        <h3>HOME</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+      </div>
+      <div id="menu1" class="container tab-pane fade"><br>
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div id="menu2" class="container tab-pane fade"><br>
+        <h3>Menu 2</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam.</p>
+      </div>
+    </div>
+    <hr>
+
+    <ul class="nav nav-pills" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="pill" href="#menu">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#menu3">Menu 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#menu4">Menu 2</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="menu" class="container tab-pane active"><br>
+        <h3>HOME</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+      </div>
+      <div id="menu3" class="container tab-pane fade"><br>
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div id="menu4" class="container tab-pane fade"><br>
+        <h3>Menu 2</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam.</p>
+      </div>
+    </div>
+
+  </div>
+  <hr>
+
+  <div class="container">
+    <h1>Navbars</h1>
+
+    <nav class="navbar navbar-expand-sm bg-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <hr>
+
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <hr>
+
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+      <div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <hr>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <hr>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+    </nav>
+    <hr>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/images/img_avatar1.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+        </a>
+      </div>
+    </nav>
+    <hr>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <span class="navbar-text">Nav text</span>
+      </div>
+    </nav>
+    <hr>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <span class="navbar-brand">Logo</span>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Link</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Link</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><hr>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <span class="navbar-brand">Logo</span>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Link</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Link</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link</a></li>
+                <li><a class="dropdown-item" href="#">Another link</a></li>
+                <li><a class="dropdown-item" href="#">A third link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><hr>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav><hr>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Page1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutorial2.html">Page2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutorial3.html">Page3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutorial4.html">Page4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forms.html">Forms</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav><hr>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">Logo2</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Page1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutorial2.html">Page2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutorial3.html">Page3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutorial4.html">Page4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forms.html">Forms</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav><hr>
+
+  </div>
+
+
+
+
+
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
